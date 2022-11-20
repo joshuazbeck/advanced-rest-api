@@ -11,7 +11,7 @@ import javax.enterprise.inject.Alternative;
 import beans.Car;
 
 /**
- * Session Bean implementation class OrdersBusinessService
+ * Local Bean implementation class CarBusinessInterface
  */
 @Stateless
 @Local(CarBusinessInterface.class)
@@ -38,7 +38,9 @@ public class CarBusinessService implements CarBusinessInterface {
    
     }
 
-    
+    /**
+	* Add a car to the list of cars
+	 */
 	@Override
 	public List<Car> addCar(int quantity, boolean isSteeringWheelOnLeftSide, float price, String name) {
 		// Add the car to the array

@@ -3,18 +3,21 @@ package beans;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * This is an object used to hold an order's information
- * @author schoolslimes
+ * This is an object used to hold an car's information
+ * @author Josh Beck
  *
  */
 
 @XmlRootElement
 public class Car {
 
+	/********* DECLARATIONS *************/
 	int wheels;
 	boolean isSteeringWheelSideRight;
 	float price;
 	String name;
+
+	/********* GETTERS/SETTERS *************/
 	public int getWheels() {
 		return wheels;
 	}
@@ -39,6 +42,8 @@ public class Car {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	/********* CONSTRUCTORS *************/
 	public Car(int wheels, boolean isSteeringWheelSideRight, float price, String name) {
 		super();
 		this.wheels = wheels;
